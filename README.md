@@ -7,7 +7,8 @@ Team:
 Anabelle
 Lucile
 
-Prod version can be played here: http://dunin.itch.io/the-grand-carpet-hotel
-Ludum Dare entry: http://ludumdare.com/compo/ludum-dare-32/?action=preview&uid=32902
+Prod version can be played here: 
+http://dunin.itch.io/the-grand-carpet-hotel 
 
-You can vote for The Grand Carpet Hotel on the Ludum Dare entry page.
+You can vote for The Grand Carpet Hotel on the Ludum Dare entry page:
+http://ludumdare.com/compo/ludum-dare-32/?action=preview&uid=32902
