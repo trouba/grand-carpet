@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8" />
+  <meta HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+	<title>THE GRAND CARPET HOTEL</title>
+	<script src="js/phaser.min.js"></script>
+	<script src="js/Boot.js"></script>
+	<script src="js/Preloader.js"></script>
+	<script src="js/MainMenu.js"></script>
+	<script src="js/Interlevel.js"></script>
+	<script src="js/Game.js"></script>
+</head>
+<body>
+
+<div id="content">
+    <div id="header">
+      <div id="logo">
+      <img src="data/logo.png">
+      </div>
+    </div>
+    <div id="gameContainer" style="width:540px;height:540px"></div>
+    <div id="credits">
+    
+    </div>
+
+
+<script type="text/javascript">
+
+      var nbLevels = 6;
+      var debutMonde2=4;
+      var debutMonde3=6;
+      var lifes;
+
+        var map;
+     	var tilesetcarpet;
+     	var tilesetpersos;
+        var solLayer;
+        var murLayer;
+        var tapisLayer;
+        var persosLayer;
+        var player;
+        var interscene;
+        var interscene2;
+        var interscene3;
+        var scene=0;
+        var cursors;
+        var carpetarray=[];
+        var framerate=8;
+		var shiftcarpet=6;
+		var level=1;
+		var nbofplayer;
+		var dangeroustile;
+		var timer;
+
+    //constantes pour déclancher victoire/défaite (voir Interlevel.js)
+    var VICTOIRE=nbLevels+1;
+    var DEFAITE= VICTOIRE*2;
+
+window.onload = function() {
+
+	//	Create your Phaser game and inject it into the gameContainer div.
+	//	We did it in a window.onload event, but you can do it anywhere (requireJS load, anonymous function, jQuery dom ready, - whatever floats your boat)
+	var game = new Phaser.Game(360, 360, Phaser.CANVAS, 'gameContainer');
+
+	//	Add the States your game has.
+	//	You don't have to do this in the html, it could be done in your Boot state too, but for simplicity I'll keep it here.
+	game.state.add('Boot', BasicGame.Boot);
+	game.state.add('Preloader', BasicGame.Preloader);
+	game.state.add('MainMenu', BasicGame.MainMenu);
+	game.state.add('Game', BasicGame.Game);
+	game.state.add('Interlevel', BasicGame.Interlevel);
+
+	//	Now start the Boot state.
+	game.state.start('Boot');
+};
+
+</script>
+<script src="js/Persos.js"></script>
+
+  </div>
+</body>
+</html>
