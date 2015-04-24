@@ -120,7 +120,7 @@ BasicGame.Game.prototype = {
         this.quitGame();
     }
 
-    if(this.persos.allEnnemiDead()){
+    if(this.persos.allEnnemiDead() && player.vie==50 ){
         level+=VICTOIRE;
         this.quitGame();
     }
