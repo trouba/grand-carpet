@@ -1,6 +1,6 @@
 The Grand Carpet Hotel is a game made in 72 hours for the Ludum Dare 32.
 
-Team:
+Team:<br>
 @GuiBruche<br>
 @riddletom<br>
 @trouba<br>
