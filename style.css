@@ -1,26 +1,81 @@
 body {  margin: 0 auto;
 background-color: #000;
+background-image:url(data/bggradient.gif);
+   background-repeat:repeat
   }
+
+#header {text-align:center;
+color:red;
+padding: 20px 0px 20px 0px;
+}
   
+h1 {font-family:Courier;
+color:#FFF;
+font-size: 20px;
+font-weight: bold;
+margin-bottom:0px} 
+
+h2 {font-family:Courier;
+color:#FFF;
+font-size: 20px;
+font-weight: normal;
+margin-top:0px} 
+
+h3{padding-bottom: 15px;
+font-size: 31px;}
 
 #content {
-  
-  height: 800px;
-  background-color: blue;
    margin: 0 auto;
-   background-image:url(data/bggradient.png);
-   background-repeat:repeat;}
+   ;}
   
-#header {text-align:center;
-color:red;}
+
 
 #gameContainer {
   width:600px;
   height:600px;
   margin: 0 auto;
+  margin-bottom:50px;
 }
-
-#logo{padding: 20px;}
 
 canvas{border-radius:15px;
 margin:0 auto;}
+
+#footer{background-color:#000}
+
+#links {text-align: left;
+font-family: sans-serif;
+padding: 20px 0px;
+color: #FFF;
+background-color: #FB1E45;;
+}
+
+#links a {color:#FFF;}
+
+#credits {text-align: left;
+font-family: sans-serif;
+padding: 20px 0px;
+color: #FFF;
+
+background-color: #FF3C18;
+}
+
+.column-center {width:540px;
+margin:0 auto;}
+
+ul{list-style-type:none;
+margin:0;
+padding:0;
+padding-top: 14px;
+margin-bottom:30px;
+}
+
+.names{margin:0;
+text-align:center}
+
+.pixhead{display:block;
+float:left;}
+
+.last{clear:both;
+padding-top:30px;}
+
+.bold{font-weight:bold}
